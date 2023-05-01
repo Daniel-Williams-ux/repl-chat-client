@@ -14,3 +14,9 @@ const chat_interface = readline.createInterface({
 //User and message variables
 var chat_handle = "";
 var message_to_send = "";
+
+//Handle Socket events
+socket.on("connect", function () {
+  get_chat_handle();
+  socket.on("broadcast", display_message);
+});//this code calls two methods: get_chat_handle and display_message
