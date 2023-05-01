@@ -3,7 +3,7 @@ const io = require("socket.io-client");
 const readline = require("readline");
 
 //Create a new connection to the chat server
-var socket = io("https://repl-chat-server.DanielWilliams23.repl.co");
+var socket = io("https://repl-chat-server.DanielWilliam23.repl.co");
 
 //Setup a console interface
 const chat_interface = readline.createInterface({

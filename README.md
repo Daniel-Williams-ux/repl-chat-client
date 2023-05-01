@@ -10,3 +10,8 @@
 8. Showing messages from other users
 9. Complete client code
 10. Running the client app
+
+
+```
+npm install colors
+````
