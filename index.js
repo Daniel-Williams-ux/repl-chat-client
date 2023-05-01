@@ -10,3 +10,7 @@ const chat_interface = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
+
+//User and message variables
+var chat_handle = "";
+var message_to_send = "";
