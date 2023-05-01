@@ -33,3 +33,12 @@ function get_chat_handle() {
     }
   );
 }
+
+// Waits for a new message to send
+function chat() {
+  chat_interface.question(chat_handle + ": ", function (message) {
+    message_to_send = chat_handle + ": " + message;
+    socket.emit("message", message_to_send);
+    chat();
+  });
+}
