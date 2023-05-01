@@ -42,3 +42,12 @@ function chat() {
     chat();
   });
 }
+
+// Handles an incoming message, and checks to see that it is not the one we sent.
+// Shows it on the console if it is from another user.
+function display_message(message) {
+  if (message_to_send != message) {
+    console.log("\n" + message);
+    chat();
+  }
+}
